@@ -16,8 +16,18 @@ body {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
+  color: white;
 }
 
 a:hover {
       font-weight: 800;
     }
+
+a i {
+  padding: 0 0.5em;
+}
+
+div, span {
+  color: white;
+}
