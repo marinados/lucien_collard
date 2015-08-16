@@ -1,6 +1,6 @@
 #header {
 display: flex;
-height: 20%;
+height: 15%;
 div {
   flex-grow: 1;
   }
@@ -26,17 +26,27 @@ div {
 }
 
 .wrapper {
-  height: 75%;
+  height: 80%;
 }
 
 #navbar {
-  height: 5%;
+  height: 3%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
   text-align: center;
   span {
     flex-grow: 1;
+    color: #EEE9A1;
   }
+  padding-bottom: 1%;
+}
+
+#legal-mention {
+  height: 1%;
+  color: gray;
+  font-size: 12px;
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
 }
 
