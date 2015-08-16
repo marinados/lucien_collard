@@ -58,6 +58,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.5.2)
+    font-awesome-sass (4.3.2.1)
+      sass (~> 3.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     high_voltage (2.4.0)
@@ -150,6 +152,7 @@ DEPENDENCIES
   better_errors
   byebug
   coffee-rails (~> 4.1.0)
+  font-awesome-sass (~> 4.3.0)
   high_voltage
   i18n
   jbuilder (~> 2.0)
