@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :exception
 
+  def random_bg
+    if params[:id] == "types"
+      "backgrounds/7"
+    else
+      "backgrounds/#{rand(6)}"
+    end
+  end
 
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale

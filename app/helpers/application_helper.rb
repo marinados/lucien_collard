@@ -1,10 +1,10 @@
 module ApplicationHelper
 
   def random_bg
-    if request.parameters[:id] == "types"
-      "backgrounds/7"
+    if params[:id] == "types"
+      "assets/backgrounds/7.jpg"
     else
-      "backgrounds/#{rand(6)}"
+      "assets/backgrounds/#{rand(6)}.jpg"
     end
   end
 end
