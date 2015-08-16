@@ -8,9 +8,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background: url($bg-image);
 }
 
 .wrapper {
     flex: auto;
 }
+
 
