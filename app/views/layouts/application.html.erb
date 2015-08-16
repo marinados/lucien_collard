@@ -6,12 +6,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body style="background: url(<%=random_bg%>); background-size: cover">
-  <%= render 'layouts/header' %>
-  <div class="wrapper">
-    <%= yield %>
-  </div>
-    <%= render 'layouts/navbar' %>
-    <%= render 'layouts/mention_legale'%>
+<body>
+  <div class="fullscreen" style="background: url(<%=random_bg%>); background-size: cover">
+    <%= render 'layouts/header' %>
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+      <%= render 'layouts/navbar' %>
+      <%= render 'layouts/mention_legale'%>
+    </div>
 </body>
 </html>
