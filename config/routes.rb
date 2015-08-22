@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   scope '(:locale)', locale: /fr|en/ do
+    get 'sessions', to: 'sessions#create_cookie', as: 'sessions'
+    get 'welcome', to: 'high_voltage/pages#show', id: 'welcome', as: 'welcome'
     get 'history', to: 'high_voltage/pages#show', id: 'history', as: 'history'
     get 'philosophy', to: 'high_voltage/pages#show', id: 'philosophy', as: 'philosophy'
     get 'types', to: 'high_voltage/pages#show', id: 'types', as: 'types'
