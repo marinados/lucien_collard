@@ -7,15 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class='fullscreen'>
-    <div class=<%= random_bg %>>
-      <%= render 'layouts/header' %>
-      <div id="wrapper">
-        <%= yield %>
-      </div>
-        <%= render 'layouts/navbar' %>
-        <%= render 'layouts/mention_legale'%>
-      </div>
+  <div class=<%= random_bg %>>
+    <%= render 'layouts/header' %>
+    <div id="wrapper">
+      <%= yield %>
+    </div>
+      <%= render 'layouts/navbar' %>
+      <%= render 'layouts/mention_legale'%>
     </div>
 </body>
 </html>

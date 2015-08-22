@@ -1,34 +1,32 @@
 $(document).ready(function(){
   if ($('.arrows').length == 1) {
     $('#right-arrow').click(function(){
-      var bg = $('.fullscreen');
-      bg.fadeOut(800).queue(function(){
-        if(bg.css('background-image').search('8cap.jpg') >= 0) {
-          $(this).css('background-image', 'image-url(assets/backgrounds/8blue.jpg)');
-         } else if (bg.css('background-image').search('8blue.jpg') >= 0) {
-          $(this).css('background-image', 'image-url(assets/backgrounds/8black.jpg)');
-         } else if (bg.css('background-image').search('8black.jpg') >= 0) {
-          $(this).css('background-image', 'image-url(assets/backgrounds/8cap.jpg)');
+      var bg = $('div:first');
+      $('body').fadeOut(800).queue(function(){
+        if(bg.hasClass('bg8cap')) {
+          bg.removeClass('bg8cap').addClass('bg8blue');
+         } else if (bg.hasClass('bg8blue')) {
+          bg.removeClass('bg8blue').addClass('bg8black');
+         } else if (bg.hasClass('bg8black')) {
+          bg.removeClass('bg8black').addClass('bg8cap');
          }
-           $(this).css('background-size', 'cover');
-           $(this).dequeue();
+        $(document.body).dequeue();
        });
-       bg.fadeIn(1200)
+       $('body').fadeIn(1200)
     });
     $('#left-arrow').click(function(){
-      var bg = $('.fullscreen');
-      bg.fadeOut(800).queue(function(){
-        if(bg.css('background-image').search('8cap.jpg') >= 0) {
-          $(this).css('background-image', 'image-url(assets/backgrounds/8black.jpg)');
-         } else if (bg.css('background-image').search('8blue.jpg') >= 0) {
-          $(this).css('background-image', 'image-url(assets/backgrounds/8cap.jpg)');
-         } else if (bg.css('background-image').search('8black.jpg') >= 0) {
-          $(this).css('background-image', 'image-url(assets/backgrounds/8blue.jpg)');
+      var bg = $('div:first');
+      $('body').fadeOut(800).queue(function(){
+        if(bg.hasClass('bg8cap')) {
+          bg.removeClass('bg8cap').addClass('bg8black');
+         } else if (bg.hasClass('bg8black')) {
+          bg.removeClass('bg8black').addClass('bg8blue');
+         } else if (bg.hasClass('bg8blue')) {
+          bg.removeClass('bg8blue').addClass('bg8cap');
          }
-           $(this).css('background-size', 'cover');
-           $(this).dequeue();
+        $(document.body).dequeue();
        });
-       bg.fadeIn(1200)
+       $('body').fadeIn(1200)
     });
   }
 })
