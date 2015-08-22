@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
   scope '(:locale)', locale: /fr|en/ do
     get 'sessions', to: 'sessions#create_cookie', as: 'sessions'
-    get 'welcome', to: 'high_voltage/pages#show', id: 'welcome', as: 'welcome'
-    get 'history', to: 'high_voltage/pages#show', id: 'history', as: 'history'
-    get 'philosophy', to: 'high_voltage/pages#show', id: 'philosophy', as: 'philosophy'
-    get 'types', to: 'high_voltage/pages#show', id: 'types', as: 'types'
-    get 'types/blue', to: 'high_voltage/pages#show', id: 'blue', as: 'blue'
-    get 'types/black', to: 'high_voltage/pages#show', id: 'black', as: 'black'
-    get 'vineyards', to: 'high_voltage/pages#show', id: 'vineyards', as: 'vineyards'
-    get 'contact', to: 'high_voltage/pages#show', id: 'contact', as: 'contact'
-    get 'film', to: 'high_voltage/pages#show', id: 'film', as: 'film'
+    get 'welcome', to: 'pages#show', id: 'welcome', as: 'welcome'
+    get 'history', to: 'pages#show', id: 'history', as: 'history'
+    get 'philosophy', to: 'pages#show', id: 'philosophy', as: 'philosophy'
+    get 'types', to: 'pages#show', id: 'types', as: 'types'
+    get 'types/blue', to: 'pages#show', id: 'blue', as: 'blue'
+    get 'types/black', to: 'pages#show', id: 'black', as: 'black'
+    get 'vineyards', to: 'pages#show', id: 'vineyards', as: 'vineyards'
+    get 'contact', to: 'pages#show', id: 'contact', as: 'contact'
+    get 'film', to: 'pages#show', id: 'film', as: 'film'
+
+    root to: 'pages#show', id: 'home'
+    get "/pages/*id" => 'pages#show', format: false
   end
 end
