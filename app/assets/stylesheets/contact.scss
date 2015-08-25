@@ -13,8 +13,8 @@
 }
 
 #contact {
-  height: 50vh;
-  width: 45vw;
+  max-height: 50vh;
+  max-width: 45vw;
   align-self: center;
   text-align: center;
 }
@@ -25,12 +25,13 @@
 
   input, textarea {
     margin: 1%;
+    padding: 0.5em;
   }
   input  {
-    width: 47%;
+    width: 45%;
   }
   textarea {
-    width: 98%;
+    width: 96%;
   }
   ol {
     padding: 0;
@@ -41,9 +42,51 @@
   ol li {
     display: inline;
   }
+  input[type='submit'] {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: end;
+    float: right;
+    color: grey;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+  }
 }
 
 .grey {
   background-color: grey;
   border: none;
+}
+
+::-webkit-input-placeholder {
+   text-transform: uppercase;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-transform: uppercase;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-transform: uppercase;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+:-ms-input-placeholder {
+   text-transform: uppercase;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+.rotate {
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+    transform: rotate(-8deg);
+}
+
+.intro {
+  color: #EEE9A1;
+  font-style: italic;
 }

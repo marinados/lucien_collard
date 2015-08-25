@@ -1,6 +1,6 @@
 <div id="contact">
-<%= image_tag 'lucien.jpg'%>
-<p> <%= t('same_address')%></p>
+<%= image_tag 'lucien.jpg', class: 'rotate'%>
+<p class="intro"> <%= t('same_address')%></p>
 <p> <%= t('address')%></p>
 <p> <%= t('tel')%></p>
   <%= form_for @contact do |f| %>
@@ -14,7 +14,7 @@
   </ol>
 
 
-    <%= f.text_area :message, placeholder: "#{t('your_message')}",as: :text, required: true, cols: 70, rows: 5, class: 'grey' %>
+    <%= f.text_area :message, placeholder: "#{t('your_message')}",as: :text, required: true, cols: 70, rows: 4, class: 'grey' %>
     <div class= "hidden">
       <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
     </div>
