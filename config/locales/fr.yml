@@ -4,3 +4,12 @@ fr:
   contact: Contactez Nous
   types: Nos Cuvées
   vineyards: Nos Vignes
+  same_address: "Lucien Collard n'a jamais changé d'adresse depuis ses premiers vendanges à Bouzy !"
+  address: "1 RUE VILLEBOIS MAREUIL 51150 BOUZY, FRANCE"
+  tel: "Portable 06 71 02 40 28 / Fixe 09 67 33 43 65"
+  helpers:
+    submit:
+      create: Envoyer votre message
+  subject: Objet du message
+  your_email: Votre émail
+  your_message: Votre message

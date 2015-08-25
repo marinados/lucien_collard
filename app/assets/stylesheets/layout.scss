@@ -27,8 +27,11 @@
 }
 
 #wrapper {
+  display: flex;
+  flex-direction: column;
   height: 80%;
 }
+
 
 #navbar {
   height: 3%;
@@ -108,3 +111,4 @@
     }
   }
 }
+

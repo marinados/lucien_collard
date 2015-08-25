@@ -8,8 +8,9 @@ Rails.application.routes.draw do
     get 'types/blue', to: 'pages#show', id: 'blue', as: 'blue'
     get 'types/black', to: 'pages#show', id: 'black', as: 'black'
     get 'vineyards', to: 'pages#show', id: 'vineyards', as: 'vineyards'
-    get 'contact', to: 'pages#show', id: 'contact', as: 'contact'
     get 'film', to: 'pages#show', id: 'film', as: 'film'
+    get '/contact',     to: 'contacts#new', as: 'contact'
+    resources "contacts", only: [:create]
 
     root to: 'pages#show', id: 'home'
     get "/pages/*id" => 'pages#show', format: false

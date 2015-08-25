@@ -1,0 +1,49 @@
+.padded {
+  padding: 3% 5%;
+  height: 100vh;
+}
+
+#contact-wrapper {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+#contact {
+  height: 50vh;
+  width: 45vw;
+  align-self: center;
+  text-align: center;
+}
+
+.new_contact {
+  display: flex;
+  flex-direction: column;
+
+  input, textarea {
+    margin: 1%;
+  }
+  input  {
+    width: 47%;
+  }
+  textarea {
+    width: 98%;
+  }
+  ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+  ol li {
+    display: inline;
+  }
+}
+
+.grey {
+  background-color: grey;
+  border: none;
+}
