@@ -1,1 +1,17 @@
-home.html.erb
+<div class="modal show" id="film" tabindex="-1" role="dialog" aria-labelledby="film">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= video_tag 'presentation.mov', size: '420x360', autoplay: true, autobuffer: true, controls: true %>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#film').modal('show');
+    });
+</script>

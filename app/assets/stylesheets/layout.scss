@@ -67,7 +67,6 @@
   flex-direction: row;
   justify-content: flex-end;
   height: 4vh;
-  padding: 10vh 10vw 0 0;
 }
 
 #welcome-content {
@@ -76,7 +75,7 @@
   justify-content: center;
   align-items: center;
   align-self: center;
-  padding: 0 35vw 15vh 35vw;
+  padding: 0 20vw 15vh 20vw;
   max-height: 50vh;
 
 
@@ -89,7 +88,7 @@
     max-height: 100%;
     height: 100%;
   }
-  padding-bottom: 10vh;
+  margin-bottom: 10vh;
 }
 
 #text {
