@@ -7,8 +7,24 @@
   color: black;
 }
 
+.modal-dialog {
+  width: 70%;
+  margin: auto;
+}
 .modal-content, .modal-body {
   background-color: transparent;
   box-shadow: none;
   border: none;
+  width: 100%;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+  max-width: 720px;
+  padding-top: 5%;
+}
+
+.modal {
+  margin: auto;
 }
