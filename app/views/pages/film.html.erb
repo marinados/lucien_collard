@@ -1,0 +1,14 @@
+<div class="modal show" id="film" tabindex="-1" role="dialog" aria-labelledby="film">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <%= button_to root_path, class: 'close', method: :get do %>
+          <span aria-hidden="true">&times;</span>
+        <% end %>
+
+        <%= video_tag 'presentation.mov', autoplay: true, autobuffer: true, controls: true %>
+      </div>
+    </div>
+  </div>
+</div>
+

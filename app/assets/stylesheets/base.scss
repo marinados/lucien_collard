@@ -1,5 +1,8 @@
 html, body{
-    height: 100vh;
+    height: 100vh !important;
+    width: auto;
+    overflow: hidden;
+
     margin: 0;
     width: 100vw;
     max-height: 100vh;

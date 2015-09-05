@@ -3,6 +3,6 @@ class SessionsController < ApplicationController
 
   def create_cookie
     cookies[:check_age] = { value: "true", expires: 1.hour.from_now }
-    redirect_to root_path
+    redirect_to film_path
   end
 end

@@ -1,33 +1,21 @@
 module ApplicationHelper
 
-  def random_bg
-    if params[:id] == "types"
-      "bg8cap"
-    else
-      "bg#{rand(6)}"
-    end
-  end
-
-  def bg
-    if params[:id] == 'home'
-      'bg8black'
-    elsif params[:id] =='types'
-      'bg8cap'
-    else
-      'bg7'
-    end
-  end
-
   def changing_bg
     case params[:id]
     when 'history'
-      "bg-history1 settings"
+      "bg-history false-div"
     when 'philosophy'
-      'bg-philosophy1 settings'
+      'bg-philosophy false-div'
     when 'vineyards'
-      'bg-vineyards1 settings'
+      'bg-vineyards false-div'
+    when 'types'
+      'bg8cap false-div'
+    when 'contacts'
+      'bg7'
+    when 'home'
+      'bg8black false-div'
     else
-      'no-class'
+      'false-div'
     end
   end
 end

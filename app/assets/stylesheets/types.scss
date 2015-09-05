@@ -1,5 +1,6 @@
 .arrows {
-  height: 100%;
+  margin: auto 10%;
+  height: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,9 +12,20 @@
     cursor: pointer;
   }
 }
+
 #left-arrow {
+  height: 100%;
   padding-right: 1em;
+  img {
+    height: 100%;
+    vertical-align: baseline;
+  }
 }
 #right-arrow {
+  height: 100%;
   padding-left: 1em;
+  img {
+    height: 100%;
+    vertical-align: baseline;
+  }
 }
