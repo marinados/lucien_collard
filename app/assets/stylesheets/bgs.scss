@@ -1,6 +1,39 @@
 .bg-history1 {
-  background-image: image-url('backgrounds/obj/old_bottle.png');
+  background-image: image-url('backgrounds/old_bottle.png');
   background-size: cover;
+}
+
+.bg-philosophy1 {
+  background-image: image-url('backgrounds/bottle_neck.png');
+  background-size: cover;
+}
+
+.bg-vineyards1 {
+  background-image: image-url('backgrounds/log.png');
+  background-size: cover;
+}
+
+.bg-history2 {
+  background-image: image-url('backgrounds/frame.png');
+  background-size: cover;
+}
+
+.bg-philosophy2 {
+  background-image: image-url('backgrounds/coin.png');
+  background-size: cover;
+}
+
+.bg-vineyards2 {
+  background-image: image-url('backgrounds/letter.png');
+  background-size: cover;
+}
+
+.bg-vineyards3 {
+  background-image: image-url('backgrounds/bottle_closeup.png');
+  background-size: cover;
+}
+
+.settings {
   min-height: 100vh;
   height: 100%;
   width: auto !important;
@@ -27,13 +60,9 @@
 .bg8black {
   background-image: image-url('backgrounds/8black.jpg');
   background-size: cover;
-  padding: 3% 5% 1% 5%;;
+  padding: 3% 5% 1% 5%;
 }
 
-.fond {
-  background-image: image-url('backgrounds/obj/old_bottle.png');
-  background-size: cover;
-  min-height: 100vh;
-  height: 100vh;
-  width: 50vw;
+.no-class {
+  height: 100%;
 }

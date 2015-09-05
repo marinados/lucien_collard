@@ -21,13 +21,13 @@ module ApplicationHelper
   def changing_bg
     case params[:id]
     when 'history'
-      'bg-history1'
+      "bg-history1 settings"
     when 'philosophy'
-      'bg-philosophy1'
+      'bg-philosophy1 settings'
     when 'vineyards'
-      'bg-vineyards1'
+      'bg-vineyards1 settings'
     else
-      nil
+      'no-class'
     end
   end
 end
