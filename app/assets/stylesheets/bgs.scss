@@ -1,6 +1,7 @@
 .bg-history1 {
   background-image: image-url('backgrounds/old_bottle.png');
   background-size: cover;
+  // transition: background 0.5s linear 2000;
 }
 
 .bg-philosophy1 {
@@ -37,7 +38,7 @@
   min-height: 100vh;
   height: 100%;
   width: auto !important;
-  padding: 3% 5% 1% 5%;;
+  padding: 3% 5% 1% 5%;
 }
 
 .bg7 {

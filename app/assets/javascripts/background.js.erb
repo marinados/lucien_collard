@@ -1,0 +1,53 @@
+$(document).ready(function(){
+  $('html').show();
+
+
+  // $(function () {
+  //     var bg = $('.bg-history1');
+  //     var backgrounds = [
+  //       "\'url(assets/backgrounds/old_bottle.png})\'",
+  //       "\'url(assets/backgrounds/frame.png)\'"
+  //       ];
+
+  //     var current = 0;
+
+  //     function nextBackground() {
+  //         console.log(bg);
+  //         bg.fadeOut(1000)
+  //         bg
+  //        .delay(1)
+  //        .queue(function(){
+  //            $(this).css('background', backgrounds[current = ++current % backgrounds.length]);
+  //            $(this).dequeue();
+  //        });
+  //        bg.fadeIn(1000)
+  //         setTimeout(nextBackground, 7000);
+  //     }
+
+  //     setTimeout(nextBackground, 7000);
+
+  // });
+
+// ALMOST WORKING
+  // if ($('.bg-history1').length == 1) {
+  //   $('.bg-history1').fadeTo(1000, 0.2, "linear", function(){
+  //     $(this).css('background-image', 'url(assets/backgrounds/frame.png)');
+  //   }).delay(800).fadeTo(800, 1, "linear");
+  // }
+
+  var f = document.getElementById('bg');
+  document.addEventListener('click', function(){
+    setTimeout(nextBackground(), 7000);
+
+},false);
+
+  function nextBackground() {
+    $(f).css('background-image','url(assets/backgrounds/frame.png)');
+    setTimeout(nextBackgroundAgain(), 7000);
+  }
+    function nextBackgroundAgain() {
+    $(f).css('background-image','url(assets/backgrounds/old_bottle.png)');
+    setTimeout(nextBackground(), 7000);
+  }
+})
+
