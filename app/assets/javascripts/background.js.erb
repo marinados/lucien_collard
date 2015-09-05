@@ -3,37 +3,21 @@ $(document).ready(function(){
 
 
   $(function () {
-      var bg = $('.bg-history1');
-      var backgrounds = [
-        "\'url(assets/backgrounds/old_bottle.png})\'",
-        "\'url(assets/backgrounds/frame.png)\'",
-        ];
-
-      var current = 0;
+      var bg = $('.false-div');
 
       function nextBackground() {
-          bg.fadeOut(1000)
-          bg
-         .delay(1)
-         .queue(function(){
-          if (current >= backgrounds.length - 1) {
-             $(this).css('background', backgrounds[current]);
-             current++;
-             console.log(backgrounds[current]);
-             $(this).dequeue();
-           }
-           else {
-            current = 0;
-            $(this).css('background', backgrounds[current]);
-             current++;
-             $(this).dequeue()
-           }
-         });
-         bg.fadeIn(1000)
-          setTimeout(nextBackground, 7000);
+        bg.fadeOut(600, 'easeOutQuad');
+        if (bg.hasClass('bg-history')) {
+          bg.removeClass('bg-history').addClass('bg-history1').hide();
+        }
+        else if (bg.hasClass('bg-history1')) {
+          bg.removeClass('bg-history1').addClass('bg-history').hide();
+        }
+        bg.fadeIn(600, 'easeInQuad');
+        setTimeout(nextBackground, 4500);
       }
 
-      setTimeout(nextBackground, 7000);
+     setTimeout(nextBackground, 4500);
 
   });
 

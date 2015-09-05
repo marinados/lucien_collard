@@ -5,31 +5,26 @@
   top: 0;
   left: 0;
   z-index: -1000;
+  background-size: cover;
+  background-position: center;
 }
 
 .bg-history {
   background-image: image-url('backgrounds/old_bottle.png');
-  background-size: cover;
-  background-position: center;
 }
 
 
 .bg-philosophy {
   background-image: image-url('backgrounds/bottle_neck.png');
-  background-size: cover;
-  background-position: center;
 }
 
 .bg-vineyards {
   background-image: image-url('backgrounds/log.png');
-  background-size: cover;
-  background-position: center;
 }
 
-// .bg-history2 {
-//   background-image: image-url('backgrounds/frame.png');
-//   background-size: cover;
-// }
+.bg-history1 {
+  background-image: image-url('backgrounds/frame.png');
+}
 
 // .bg-philosophy2 {
 //   background-image: image-url('backgrounds/coin.png');
