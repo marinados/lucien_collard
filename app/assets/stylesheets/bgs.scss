@@ -48,7 +48,7 @@
   padding: 3% 5% 1% 5%;
 }
 
-.bg7 {
+.bg {
   background-image: image-url('backgrounds/7.jpg');
   background-size: cover;
 }
@@ -67,11 +67,13 @@
   background-position: center;
 }
 
-.bg8black {
+.home, .bg8black {
   background-image: image-url('backgrounds/8black.jpg');
   background-size: cover;
   padding: 3% 5% 1% 5%;
   background-position: 50% 30%;
 }
+
+
 
 

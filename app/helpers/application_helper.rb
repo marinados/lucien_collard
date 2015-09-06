@@ -4,17 +4,17 @@ module ApplicationHelper
     x = mobile_device? ? "-mobile" : ""
     case params[:id]
     when 'history'
-      "js-trigger bg-history false-div" + x
+      "js-trigger bg-history#{x} false-div" + x
     when 'philosophy'
-      'js-trigger bg-philosophy false-div' + x
+      "js-trigger bg-philosophy#{x} false-div" + x
     when 'vineyards'
-      'js-trigger bg-vineyards false-div' + x
+      "js-trigger bg-vineyards#{x} false-div" + x
     when 'types'
-      'bg8cap false-div' + x
+      "bg8cap#{x} false-div" + x
     when 'contacts'
-      'bg7'
+      'bg'
     when 'home'
-      'bg8black false-div' + x
+      "home#{x} false-div" + x
     else
       'false-div' + x
     end
