@@ -13,33 +13,32 @@
   background-image: image-url('backgrounds/old_bottle.png');
 }
 
+.bg-history1 {
+  background-image: image-url('backgrounds/frame.png');
+}
 
 .bg-philosophy {
   background-image: image-url('backgrounds/bottle_neck.png');
+}
+
+.bg-philosophy1 {
+  background-image: image-url('backgrounds/coin.png');
+  background-size: cover;
 }
 
 .bg-vineyards {
   background-image: image-url('backgrounds/log.png');
 }
 
-.bg-history1 {
-  background-image: image-url('backgrounds/frame.png');
+.bg-vineyards1 {
+  background-image: image-url('backgrounds/letter.png');
+  background-size: cover;
 }
 
-// .bg-philosophy2 {
-//   background-image: image-url('backgrounds/coin.png');
-//   background-size: cover;
-// }
-
-// .bg-vineyards2 {
-//   background-image: image-url('backgrounds/letter.png');
-//   background-size: cover;
-// }
-
-// .bg-vineyards3 {
-//   background-image: image-url('backgrounds/bottle_closeup.png');
-//   background-size: cover;
-// }
+.bg-vineyards2 {
+  background-image: image-url('backgrounds/bottle_closeup.png');
+  background-size: cover;
+}
 
 .settings {
   z-index: 1;
