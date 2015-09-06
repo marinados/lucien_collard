@@ -8,7 +8,7 @@
 }
 
 .modal-dialog {
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 .modal-content, .modal-body {
@@ -20,9 +20,8 @@
 
 video {
   width: 100%    !important;
-  height: auto   !important;
-  max-width: 720px;
-  padding-top: 5%;
+  height: auto;
+
 }
 
 .modal {

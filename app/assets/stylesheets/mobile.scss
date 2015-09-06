@@ -66,8 +66,28 @@ color: #EEE9A1;
   }
 }
 
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
-    background-color: transparent;
-    color: #EEE9A1;
-  }
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+  background-color: transparent;
+  color: #EEE9A1;
+}
 
+#contact-mobile {
+  height: 100%;
+  input, textarea {
+    width: 100%;
+    font-size: 35px;
+  }
+}
+
+.margin-mobile {
+  margin-bottom: 30px;
+}
+
+.size {
+  height: 4em;
+
+}
+
+.double-size {
+  height: 10em;
+}
