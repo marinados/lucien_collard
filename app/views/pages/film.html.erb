@@ -6,9 +6,21 @@
           <span aria-hidden="true">&times;</span>
         <% end %>
 
-        <%= video_tag 'presentation.mov', autoplay: true, autobuffer: true, controls: true %>
+        <%= video_tag 'presentation.mov', autoplay: true, autobuffer: true, controls: true, id: 'video' %>
       </div>
     </div>
   </div>
 </div>
 
+<script>
+playVideo();
+function playVideo(){
+    var video = document.getElementById('video');
+    console.log(video);
+    video.play();
+    video.addEventListener('ended',function(){
+        window.location = '<%= "#{root_path}" %>';
+    });
+}
+
+</script>
