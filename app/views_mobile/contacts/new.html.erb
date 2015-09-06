@@ -1,0 +1,29 @@
+<div id="contact">
+<%= image_tag 'lucien.jpg', class: 'rotate'%>
+<p class="intro"> <%= t('same_address')%></p>
+<p> <%= t('address')%></p>
+<p> <%= t('tel')%></p>
+  <%= form_for @contact do |f| %>
+  <ol>
+    <li>
+      <%= f.text_field :subject, placeholder: "#{t('subject')}", required: true, class: 'grey' %>
+    </li>
+    <li>
+       <%= f.text_field :email, placeholder: "#{t('your_email')}", required: true, class: 'grey' %>
+    </li>
+  </ol>
+
+
+    <%= f.text_area :message, placeholder: "#{t('your_message')}",as: :text, required: true, cols: 70, rows: 4, class: 'grey' %>
+    <div class= "hidden">
+      <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.submit %>
+    </div>
+  <% end %>
+
+
+
+</div>

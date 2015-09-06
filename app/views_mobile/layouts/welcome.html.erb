@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Champagne</title>
+  <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,300|Gilda+Display' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body id="welcome" class="bg7 settings">
+  <div id="welcome-header">
+    <%= link_to 'EN', locale: 'en' %>
+    <span id='header-bar'> | </span>
+    <%= link_to 'FR', locale: 'fr' %>
+  </div>
+
+  <div id="welcome-content">
+    <div id="logo">
+      <%= image_tag 'logo.png' %>
+    </div>
+
+    <div id="text">
+      <%= yield %>
+    </div>
+  </div>
+  <div class="bottom-margin">
+    <%= render 'layouts/mention_legale'%>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<div id="header" class='mobile'>
+  <div class="logo">
+    <%= link_to root_path do %>
+      <%= image_tag 'logo.png' %>
+    <% end %>
+  </div>
+
+  <div class="languages text-mobile">
+    <%= link_to 'EN', locale: 'en' %>
+    <span id='header-bar'> | </span>
+    <%= link_to 'FR', locale: 'fr' %>
+  </div>
+</div>

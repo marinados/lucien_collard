@@ -1,0 +1,40 @@
+<nav id="navbar-mobile" class="navbar dropup" role="navigation">
+  <ul class="nav navbar-nav">
+      <li>
+        <span class='text-mobile-menu'>
+          <%= link_to icon('facebook-square'), ""%>
+          <%= link_to icon('instagram'), ""%>
+        </span>
+      </li>
+      <li>
+        <span>
+          <p class="text-mobile">Mentions légales</p>
+          <p class="text-mobile">Champagne Lucien Collard</p>
+        </span>
+      </li>
+      <li>
+        <%= link_to "#", {class: "dropdown-toggle mobile-menu", "data-toggle" => "dropdown", "role" => "button", "aria-expanded" => "false"} do %>
+          <span class='text-mobile-menu'> <%= icon('bars')%> </span>
+        <% end %>
+        <ul class="dropdown-menu dropdown-menu-left" role="menu">
+          <li>
+            <span> <%= link_to t('history'), history_path %> </span>
+          </li>
+          <li>
+            <span> <%= link_to t('philosophy'), philosophy_path %> </span>
+          </li>
+          <li>
+            <span> <%= link_to t('types'), types_path %> </span>
+          </li>
+           <li>
+            <span> <%= link_to t('vineyards'), vineyards_path %> </span>
+          </li>
+          <li>
+            <span> <%= link_to t('contact'), contact_path %> </span>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+

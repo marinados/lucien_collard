@@ -11,4 +11,5 @@ class PagesController < ApplicationController
       'welcome'
     end
   end
+
 end
