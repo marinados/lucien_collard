@@ -1,21 +1,22 @@
 module ApplicationHelper
 
   def changing_bg
+    x = mobile_device? ? "-mobile" : ""
     case params[:id]
     when 'history'
-      "bg-history false-div"
+      "js-trigger bg-history false-div" + x
     when 'philosophy'
-      'bg-philosophy false-div'
+      'js-trigger bg-philosophy false-div' + x
     when 'vineyards'
-      'bg-vineyards false-div'
+      'js-trigger bg-vineyards false-div' + x
     when 'types'
-      'bg8cap false-div'
+      'bg8cap false-div' + x
     when 'contacts'
       'bg7'
     when 'home'
-      'bg8black false-div'
+      'bg8black false-div' + x
     else
-      'false-div'
+      'false-div' + x
     end
   end
 end

@@ -1,0 +1,75 @@
+.false-div-mobile {
+  height: 100%;
+  width:  100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-size: cover;
+  background-position: right center;
+}
+
+.bg-history {
+  background-image: image-url('backgrounds/old_bottle.png');
+}
+
+.bg-history1 {
+  background-image: image-url('backgrounds/frame.png');
+}
+
+.bg-philosophy {
+  background-image: image-url('backgrounds/bottle_neck.png');
+}
+
+.bg-philosophy1 {
+  background-image: image-url('backgrounds/coin.png');
+  background-size: cover;
+}
+
+.bg-vineyards {
+  background-image: image-url('backgrounds/log.png');
+}
+
+.bg-vineyards1 {
+  background-image: image-url('backgrounds/letter.png');
+  background-size: cover;
+}
+
+.bg-vineyards2 {
+  background-image: image-url('backgrounds/bottle_closeup.png');
+  background-size: cover;
+}
+
+.settings {
+  z-index: 1;
+  min-height: 100vh;
+  height: 100%;
+  width: auto !important;
+  padding: 3% 5% 1% 5%;
+}
+
+.bg7 {
+  background-image: image-url('backgrounds/7.jpg');
+  background-size: cover;
+}
+
+.bg8cap {
+  background-image: image-url('backgrounds/8cap.jpg');
+  background-size: cover;
+  padding: 3% 5% 1% 5%;
+  background-position: center;
+}
+
+.bg8blue {
+  background-image: image-url('backgrounds/8blue.jpg');
+  background-size: cover;
+  padding: 3% 5% 1% 5%;
+  background-position: center;
+}
+
+.bg8black {
+  background-image: image-url('backgrounds/8black.jpg');
+  background-size: cover;
+  padding: 3% 5% 1% 5%;
+  background-position: 50% 30%;
+}

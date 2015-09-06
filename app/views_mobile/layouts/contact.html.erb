@@ -7,14 +7,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="bg7 settings">
-
+<body class="bg7">
+  <div class="<%=changing_bg%>" id="bg" ></div>
+  <div class="settings">
     <%= render 'layouts/header' %>
-    <div id="contact-wrapper">
+    <div id="wrapper-mobile">
       <%= yield %>
     </div>
       <%= render 'layouts/navbar' %>
-      <%= render 'layouts/mention_legale'%>
 
+  </div>
 </body>
 </html>
