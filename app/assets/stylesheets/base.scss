@@ -1,8 +1,13 @@
-html, body{
+html {
+    height: 100vh !important;
+    width: auto;
+    display: none;
+}
+
+body{
     height: 100vh !important;
     width: auto;
     overflow: hidden;
-
     margin: 0;
     width: 100vw;
     max-height: 100vh;
@@ -14,9 +19,6 @@ html, body{
     }
 }
 
-html {
-    display: none;
-}
 
 .main {
   height: 100%;
