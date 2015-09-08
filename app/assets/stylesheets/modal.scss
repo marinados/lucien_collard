@@ -1,9 +1,10 @@
 #film {
-  background-color: transparent;
+  background-color: black;
 }
+
 .modal-header {
   height: 1em;
-  background-color: transparent;
+
   color: black;
 }
 
@@ -12,15 +13,24 @@
   margin: auto;
 }
 .modal-content, .modal-body {
-  background-color: transparent;
   box-shadow: none;
   border: none;
   width: 100%;
+  background-color: black;
 }
 
 video {
-  width: 100%    !important;
+  width: 100% !important;
   height: auto;
+  position: relative;
+  top: 20em;
+}
+
+#video-mobile {
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 20em;
 
 }
 
@@ -28,8 +38,9 @@ video {
   margin: auto;
 }
 
-.close {
-  span {
-    font-size: 21px;
+button.close {
+  span.mobile-span {
+    font-size: 4em;
+    color: grey;
   }
 }
