@@ -4,9 +4,9 @@
 
 .text-mobile {
   padding-top: 0.3em;
-font-size: 35px;
-line-height: 0.5em;
-color: #EEE9A1;
+  font-size: 35px;
+  line-height: 0.5em;
+  color: #EEE9A1;
 }
 
 .text-mobile-menu {
@@ -48,21 +48,26 @@ color: #EEE9A1;
 }
 
 .dropdown-menu {
-  background-color: transparent;
+  background-color: black;
+  opacity: 0.7;
   position: fixed !important;
   float: left;
   left: 0 !important;
   bottom: 15vh !important;
   height: 85vh;
-  padding-top: 30vh;
+  padding-top: 20vh;
   width: 100%;
   min-width: auto;
   text-align: center;
   li span {
-  font-size: 40px;
+  font-size: 60px;
+  line-height: 1.5em;
   }
   li {
     margin-bottom: 2em;
+    p {
+      font-size: 40px;
+    }
   }
 }
 
@@ -85,9 +90,25 @@ color: #EEE9A1;
 
 .size {
   height: 4em;
-
 }
 
 .double-size {
   height: 10em;
+}
+
+.page-mobile {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-mobile {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  height: 60%;
+  overflow: auto;
+  p {
+    font-size: 25px;
+  }
 }
