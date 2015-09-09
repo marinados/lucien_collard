@@ -112,3 +112,17 @@
     font-size: 25px;
   }
 }
+
+.mobile-arrow {
+  height: 15%;
+  position: relative;
+  #right-mobile-arrow {
+    right: 0;
+  }
+  #left-mobile-arrow {
+    left: 0;
+  }
+  img {
+    height: 100%;
+  }
+}
