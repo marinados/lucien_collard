@@ -3,16 +3,10 @@ $(document).ready(function() {
   initPage();
 });
 
-
-// $(window).bind('page:change', function() {
-//   initPage();
-// });
-
 function initPage() {
   if ($('.arrows').length == 1) {
     $('#right-arrow').click(function(){
       var bg = $('div:first');
-      console.log(bg);
       $('body').fadeOut(800).queue(function(){
         if(bg.hasClass('bg8cap')) {
           bg.removeClass('bg8cap').addClass('bg8blue');

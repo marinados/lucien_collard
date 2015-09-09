@@ -1,5 +1,49 @@
 <div class="arrows">
   <span id="left-arrow"> <%= image_tag 'arrow_left.png'%> </span>
-  <h3>Découvrez notre gamme de champagne Lucien Collard</h3>
+  <div id='types-content'>
+    <h3>Découvrez notre gamme de champagne Lucien Collard</h3>
+  </div>
   <span id="right-arrow"> <%= image_tag 'arrow_right.png'%> </span>
 </div>
+
+<script>
+  var text = $('#types-content');
+  var textBlack = '<%=j render 'black_text'%>';
+  var textBlue = '<%=j render 'blue_text'%>';
+  var textDiscover = $('#types-content').text();
+$('#right-arrow').click(function(){
+      var bg = $('div:first');
+      $('body').fadeOut(800).queue(function(){
+        if(bg.hasClass('bg8cap')) {
+          bg.removeClass('bg8cap').addClass('bg8blue');
+          text.html(textBlue);
+         } else if (bg.hasClass('bg8blue')) {
+          bg.removeClass('bg8blue').addClass('bg8black');
+          text.html(textBlack);
+         } else if (bg.hasClass('bg8black')) {
+          bg.removeClass('bg8black').addClass('bg8cap');
+          text.html(textDiscover);
+         }
+        $('body').dequeue();
+       });
+       $('body').fadeIn(1200)
+    });
+    $('#left-arrow').click(function(){
+      var bg = $('div:first');
+      $('body').fadeOut(800).queue(function(){
+        if(bg.hasClass('bg8cap')) {
+          bg.removeClass('bg8cap').addClass('bg8black');
+          text.html(textBlack);
+         } else if (bg.hasClass('bg8black')) {
+          bg.removeClass('bg8black').addClass('bg8blue');
+          text.html(textBlue);
+         } else if (bg.hasClass('bg8blue')) {
+          bg.removeClass('bg8blue').addClass('bg8cap');
+          text.html(textDiscover);
+         }
+        $(document.body).dequeue();
+       });
+       $('body').fadeIn(1200)
+    });
+
+</script>

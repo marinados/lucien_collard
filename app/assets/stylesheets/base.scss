@@ -51,12 +51,14 @@ div, span {
   font-size: 14px;
 }
 
-p {
+p, ul li {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 2em;
   color: grey;
-  font-size: 13px;
+  font-size: 15px;
 }
+
+
 
 .hidden {
   display: none;
