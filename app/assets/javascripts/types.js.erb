@@ -3,38 +3,7 @@ $(document).ready(function() {
   initPage();
 });
 
-function initPage() {
-  if ($('.arrows').length == 1) {
-    $('#right-arrow').click(function(){
-      var bg = $('div:first');
-      $('body').fadeOut(800).queue(function(){
-        if(bg.hasClass('bg8cap')) {
-          bg.removeClass('bg8cap').addClass('bg8blue');
-         } else if (bg.hasClass('bg8blue')) {
-          bg.removeClass('bg8blue').addClass('bg8black');
-         } else if (bg.hasClass('bg8black')) {
-          bg.removeClass('bg8black').addClass('bg8cap');
-         }
-        $(document.body).dequeue();
-       });
-       $('body').fadeIn(1200)
-    });
-    $('#left-arrow').click(function(){
-      var bg = $('div:first');
-      $('body').fadeOut(800).queue(function(){
-        if(bg.hasClass('bg8cap')) {
-          bg.removeClass('bg8cap').addClass('bg8black');
-         } else if (bg.hasClass('bg8black')) {
-          bg.removeClass('bg8black').addClass('bg8blue');
-         } else if (bg.hasClass('bg8blue')) {
-          bg.removeClass('bg8blue').addClass('bg8cap');
-         }
-        $(document.body).dequeue();
-       });
-       $('body').fadeIn(1200)
-    });
-  }
-}
+
 
 
 

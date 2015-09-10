@@ -1,8 +1,6 @@
 <div class="arrows">
   <span id="left-arrow"> <%= image_tag 'arrow_left.png'%> </span>
-  <div id='types-content'>
-    <h3>Découvrez notre gamme de champagne Lucien Collard</h3>
-  </div>
+  <div id='types-content'><h3>Découvrez notre gamme de champagne Lucien Collard</h3></div>
   <span id="right-arrow"> <%= image_tag 'arrow_right.png'%> </span>
 </div>
 
@@ -11,37 +9,33 @@
   var textBlack = '<%=j render 'black_text'%>';
   var textBlue = '<%=j render 'blue_text'%>';
   var textDiscover = '<h3>Découvrez notre gamme de champagne Lucien Collard</h3>';
+  var bg = $('div:first');
 $('#right-arrow').click(function(){
-      var bg = $('div:first');
-        if(bg.hasClass('bg8cap') && text.html() == textDiscover) {
-          $('body').fadeOut(1200, function() {
+
+      $('body').fadeOut(800).queue(function(){
+
+
+        if(bg.hasClass('bg8cap')) {
+          console.log("0");
           bg.removeClass('bg8cap').addClass('bg8blue');
-          console.log(1);
+          console.log("1");
           text.html(textBlue);
           console.log("1a");
-          $('body').fadeIn(1200);
-        })
-         } else if (bg.hasClass('bg8blue') && text.html() == textBlue) {
-          $('body').fadeOut(1200, function() {
+
+         } else if(bg.hasClass('bg8blue')) {
           bg.removeClass('bg8blue').addClass('bg8black');
-          console.log(2);
           text.html(textBlack);
-          console.log("2a");
-          $('body').fadeIn(1200);
-        })
-         } else if (bg.hasClass('bg8black') && text.html() == textBlack) {
-          $('body').fadeOut(1200, function() {
+
+         } else if(bg.hasClass('bg8black')) {
           bg.removeClass('bg8black').addClass('bg8cap');
-          console.log(3);
           text.html(textDiscover);
-          console.log("3a");
-          $('body').fadeIn(1200);
-        })
+
          }
-
-        // $('body').fadeIn(1200);
-
+        $('body').dequeue();
+        $('body').fadeIn(1200);
+       });
     });
+
 
 
 
@@ -50,7 +44,9 @@ $('#right-arrow').click(function(){
       $('body').fadeOut(800).queue(function(){
         if(bg.hasClass('bg8cap')) {
           bg.removeClass('bg8cap').addClass('bg8black');
+          console.log("1");
           text.html(textBlack);
+          console.log("1a");
          } else if (bg.hasClass('bg8black')) {
           bg.removeClass('bg8black').addClass('bg8blue');
           text.html(textBlue);
