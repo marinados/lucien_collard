@@ -13,23 +13,22 @@
   var textDiscover = $('#types-content').html();
 $('#right-arrow').click(function(){
       var bg = $('div:first');
-      $('body').fadeOut(800);
+      $('body').fadeOut(800).queue(function(){
         if(bg.hasClass('bg8cap')) {
           bg.removeClass('bg8cap').addClass('bg8blue');
           text.html(textBlue);
-          $('body').fadeIn(1200);
          } else if (bg.hasClass('bg8blue')) {
           bg.removeClass('bg8blue').addClass('bg8black');
           text.html(textBlack);
-          $('body').fadeIn(1200);
-
          } else if (bg.hasClass('bg8black')) {
           bg.removeClass('bg8black').addClass('bg8cap');
           text.html(textDiscover);
-          $('body').fadeIn(1200);
          }
-      $('body').fadeIn(1200);
+        $('body').dequeue();
+        $('body').fadeIn(1200);
        });
+
+    });
 
 
 
