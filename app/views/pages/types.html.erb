@@ -10,23 +10,36 @@
   var text = $('#types-content');
   var textBlack = '<%=j render 'black_text'%>';
   var textBlue = '<%=j render 'blue_text'%>';
-  var textDiscover = $('#types-content').html();
+  var textDiscover = '<h3>Découvrez notre gamme de champagne Lucien Collard</h3>';
 $('#right-arrow').click(function(){
       var bg = $('div:first');
-      $('body').fadeOut(800).queue(function(){
-        if(bg.hasClass('bg8cap')) {
+        if(bg.hasClass('bg8cap') && text.html() == textDiscover) {
+          $('body').fadeOut(1200, function() {
           bg.removeClass('bg8cap').addClass('bg8blue');
+          console.log(1);
           text.html(textBlue);
-         } else if (bg.hasClass('bg8blue')) {
+          console.log("1a");
+          $('body').fadeIn(1200);
+        })
+         } else if (bg.hasClass('bg8blue') && text.html() == textBlue) {
+          $('body').fadeOut(1200, function() {
           bg.removeClass('bg8blue').addClass('bg8black');
+          console.log(2);
           text.html(textBlack);
-         } else if (bg.hasClass('bg8black')) {
+          console.log("2a");
+          $('body').fadeIn(1200);
+        })
+         } else if (bg.hasClass('bg8black') && text.html() == textBlack) {
+          $('body').fadeOut(1200, function() {
           bg.removeClass('bg8black').addClass('bg8cap');
+          console.log(3);
           text.html(textDiscover);
+          console.log("3a");
+          $('body').fadeIn(1200);
+        })
          }
-        $('body').dequeue();
-        $('body').fadeIn(1200);
-       });
+
+        // $('body').fadeIn(1200);
 
     });
 
