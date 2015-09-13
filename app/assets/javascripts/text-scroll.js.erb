@@ -1,5 +1,5 @@
-var downScroll = '<div class="down-scroll" onclick="forceScrollDown()"><span><%= image_tag 'arrow_down.png'%></span></div>';
-var upScroll = '<div class="up-scroll" onclick="forceScrollUp()"><span><%= image_tag 'arrow_up.png'%></span></div>';
+var downScroll = '<div class="down-scroll pulse" onclick="forceScrollDown()"><span><%= image_tag 'arrow_down.png'%></span></div>';
+var upScroll = '<div class="up-scroll pulse" onclick="forceScrollUp()"><span><%= image_tag 'arrow_up.png'%></span></div>';
 window.onload = function() {
 
   var textScroll = document.getElementById("text");
@@ -10,7 +10,6 @@ window.onload = function() {
 
   function forceScrollDown() {
     var textScroll = document.getElementById("text");
-    var upScroll = '<div class="up-scroll" onclick="forceScrollUp()"><span><%= image_tag 'arrow_up.png'%></span></div>';
     if (textScroll.scrollHeight != textScroll.scrollTop + $('#text').innerHeight()) {
         textScroll.scrollTop += 100;
       }
@@ -22,7 +21,6 @@ window.onload = function() {
 
   function forceScrollUp() {
     var textScroll = document.getElementById("text");
-    // var downScroll = '<div class="down-scroll" onclick="forceScrollDown()"><span><%= image_tag 'arrow_down.png'%></span></div>';
     if (textScroll.scrollTop != 0) {
         textScroll.scrollTop -= 100;
       }

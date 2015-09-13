@@ -67,13 +67,19 @@
   background-position: 50% 20%;
 }
 
-.home, .bg8black {
+.bg8black {
   background-image: image-url('backgrounds/8black.jpg');
   background-size: cover;
   padding: 3% 5% 1% 5%;
   background-position: 50% 20%;
 }
 
+.home {
+  background-image: image-url('backgrounds/home.jpg');
+  background-size: cover;
+  padding: 3% 5% 1% 5%;
+  background-position: 50% 40%;
+}
 
 
 

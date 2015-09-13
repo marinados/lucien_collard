@@ -32,14 +32,14 @@
 #wrapper {
   display: flex;
   flex-direction: column;
-  height: 70%;
+  height: 68%;
   z-index: 1;
 }
 
 
 #navbar {
   z-index: 1;
-  height: 3%;
+  height: 4%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -48,12 +48,12 @@
     flex-grow: 1;
     color: #EEE9A1;
   }
-  padding-bottom: 1%;
+
 }
 
 #legal-mention {
   z-index: 1;
-  height: 1vh;
+  height: 3%;
   color: gray;
   font-size: 12px;
   font-family: 'Josefin Sans', sans-serif;
@@ -61,6 +61,7 @@
   p {
     margin: 0;
     text-align: center;
+
   }
 }
 

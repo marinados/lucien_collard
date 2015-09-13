@@ -1,44 +1,44 @@
 $(document).ready(function(){
-  $('html').fadeIn(600);
+  $('html').fadeIn(1000);
   $(function () {
       var bg = $('.js-trigger');
 
       function nextBackground() {
 
         if (bg.hasClass('bg-history')) {
-          bg.fadeOut(600, 'easeOutQuad');
+          bg.fadeOut(800, 'easeInQuad');
           bg.removeClass('bg-history').addClass('bg-history1').hide();
         }
         else if (bg.hasClass('bg-history1')) {
-          bg.fadeOut(600, 'easeOutQuad');
+          bg.fadeOut(800, 'easeInQuad');
           bg.removeClass('bg-history1').addClass('bg-history').hide();
         }
 
         else if (bg.hasClass('bg-philosophy')) {
-          bg.fadeOut(600, 'easeOutQuad');
+          bg.fadeOut(800, 'easeOutQuad');
           bg.removeClass('bg-philosophy').addClass('bg-philosophy1').hide();
         }
 
         else if (bg.hasClass('bg-philosophy1')) {
-          bg.fadeOut(600, 'easeOutQuad');
+          bg.fadeOut(800, 'easeOutQuad');
           bg.removeClass('bg-philosophy1').addClass('bg-philosophy').hide();
         }
 
         else if (bg.hasClass('bg-vineyards')) {
-          bg.fadeOut(600, 'easeOutQuad');
+          bg.fadeOut(800, 'easeOutQuad');
           bg.removeClass('bg-vineyards').addClass('bg-vineyards1').hide();
         }
 
         else if (bg.hasClass('bg-vineyards1')) {
-          bg.fadeOut(600, 'easeOutQuad');
+          bg.fadeOut(800, 'easeOutQuad');
           bg.removeClass('bg-vineyards1').addClass('bg-vineyards2').hide();
         }
 
         else if (bg.hasClass('bg-vineyards2')) {
-          bg.fadeOut(600, 'easeOutQuad');
+          bg.fadeOut(800, 'easeOutQuad');
           bg.removeClass('bg-vineyards2').addClass('bg-vineyards').hide();
         }
-        bg.fadeIn(600, 'easeInQuad');
+        bg.fadeIn(800, 'easeInQuad');
         setTimeout(nextBackground, 7000);
       }
 

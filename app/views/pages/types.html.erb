@@ -1,6 +1,6 @@
 <div class="arrows">
   <span id="left-arrow"> <%= image_tag 'arrow_left.png'%> </span>
-  <div id='types-content'><h3>Découvrez notre gamme de champagne Lucien Collard</h3></div>
+  <div id='types-content'><h3 id='discover'>Découvrez notre gamme de champagne Lucien Collard</h3></div>
   <span id="right-arrow"> <%= image_tag 'arrow_right.png'%> </span>
 </div>
 
@@ -8,7 +8,7 @@
   var text = $('#types-content');
   var textBlack = '<%=j render 'black_text'%>';
   var textBlue = '<%=j render 'blue_text'%>';
-  var textDiscover = '<h3>Découvrez notre gamme de champagne Lucien Collard</h3>';
+  var textDiscover = '<h3 id="discover">Découvrez notre gamme de champagne Lucien Collard</h3>';
   var bg = $('div:first');
 $('#right-arrow').click(function(){
   $('body').fadeOut(800).queue(function(){
