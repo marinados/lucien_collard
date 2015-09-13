@@ -1,20 +1,26 @@
 .page {
-  display: inline-flex;
-  flex-direction: row;
-}
-.text {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+#text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin-top: 5%;
   width: 60%;
   height: 70%;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  div {
-    width: 50%;
-    overflow: auto;
-    height: 100%;
-    margin-right: 2em;
-  }
+  overflow: auto;
 }
 
+.down-scroll, .up-scroll {
+  height: 5vh;
+  width: 60%;
+  cursor: pointer;
+  padding-left: 30%;
+  img {
+    height: 100%;
+  }
+  z-index: 10;
+
+}

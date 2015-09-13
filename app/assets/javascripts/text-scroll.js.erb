@@ -1,0 +1,33 @@
+var downScroll = '<div class="down-scroll" onclick="forceScrollDown()"><span><%= image_tag 'arrow_down.png'%></span></div>';
+var upScroll = '<div class="up-scroll" onclick="forceScrollUp()"><span><%= image_tag 'arrow_up.png'%></span></div>';
+window.onload = function() {
+
+  var textScroll = document.getElementById("text");
+  if (textScroll.scrollHeight > $('#text').height()) {
+    $('.page').append(downScroll);
+  }
+}
+
+  function forceScrollDown() {
+    var textScroll = document.getElementById("text");
+    var upScroll = '<div class="up-scroll" onclick="forceScrollUp()"><span><%= image_tag 'arrow_up.png'%></span></div>';
+    if (textScroll.scrollHeight != textScroll.scrollTop + $('#text').innerHeight()) {
+        textScroll.scrollTop += 100;
+      }
+    else {
+      $('.down-scroll').remove();
+      $('.page').prepend(upScroll);
+    }
+}
+
+  function forceScrollUp() {
+    var textScroll = document.getElementById("text");
+    // var downScroll = '<div class="down-scroll" onclick="forceScrollDown()"><span><%= image_tag 'arrow_down.png'%></span></div>';
+    if (textScroll.scrollTop != 0) {
+        textScroll.scrollTop -= 100;
+      }
+    else {
+      $('.up-scroll').remove();
+      $('.page').append(downScroll);
+    }
+}
