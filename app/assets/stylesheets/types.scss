@@ -36,9 +36,9 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 75%;
   h3 .types {
-    margin: 0;
+    margin-bottom: 1em;
   }
   #discover {
     position: relative;
@@ -52,7 +52,11 @@
       width: 50%;
       padding-right: 2em;
       text-align: justify;
-      line-height: 1.7em;
+      line-height: 1.3em;
     }
   }
+}
+
+.ingredients {
+  list-style: disc;
 }

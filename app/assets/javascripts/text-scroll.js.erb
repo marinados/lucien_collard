@@ -1,12 +1,12 @@
-var downScroll = '<div class="down-scroll pulse" onclick="forceScrollDown()"><span><%= image_tag 'arrow_down.png'%></span></div>';
-var upScroll = '<div class="up-scroll pulse" onclick="forceScrollUp()"><span><%= image_tag 'arrow_up.png'%></span></div>';
-window.onload = function() {
+$(document).ready(function() {
+  var downScroll = '<div class="down-scroll pulse" onclick="forceScrollDown()"><span><%= image_tag 'arrow_down.png'%></span></div>';
+  var upScroll = '<div class="up-scroll pulse" onclick="forceScrollUp()"><span><%= image_tag 'arrow_up.png'%></span></div>';
 
   var textScroll = document.getElementById("text");
   if (textScroll.scrollHeight > $('#text').height()) {
     $('.page').append(downScroll);
   }
-}
+})
 
   function forceScrollDown() {
     var textScroll = document.getElementById("text");

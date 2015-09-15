@@ -2,12 +2,12 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
+        <%= video_tag 'presentation_large.mp4', autoplay: true, autobuffer: true, controls: true, id: 'video' %>
         <div>
           <%= button_to root_path, class: 'close', method: :get do %>
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true">Passer l'introduction</span>
           <% end %>
         </div>
-        <%= video_tag 'presentation_large.mp4', autoplay: true, autobuffer: true, controls: true, id: 'video' %>
       </div>
     </div>
   </div>
@@ -17,7 +17,6 @@
 playVideo();
 function playVideo(){
     var video = document.getElementById('video');
-    console.log(video);
     video.play();
     video.addEventListener('ended',function(){
         window.location = '<%= "#{root_path}" %>';

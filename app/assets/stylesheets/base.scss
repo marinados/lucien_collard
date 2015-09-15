@@ -1,11 +1,11 @@
 html {
-    height: 100vh !important;
+    height: 100vh;
     width: auto;
     display: none;
 }
 
 body{
-    height: 100vh !important;
+    height: 100vh;
     width: auto;
     overflow: hidden;
     margin: 0;
@@ -56,6 +56,10 @@ p, ul li {
   line-height: 2em;
   color: grey;
   font-size: 15px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .hidden {
