@@ -1,6 +1,7 @@
 $(document).ready(function(){
-  $('html').fadeIn(3000);
-  setTimeout(nextBackground, 7000);
+  $('html').fadeIn(3000, function() {
+    setTimeout(nextBackground, 7000)
+  });
 })
 
 function nextBackground() {
