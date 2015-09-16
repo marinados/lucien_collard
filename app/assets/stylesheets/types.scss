@@ -1,6 +1,6 @@
 .arrows, .arrows-mobile {
   margin: 0 10%;
-  height: 50%;
+  height: 55%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,16 +47,17 @@
   div {
     display: flex;
     flex-direction: row;
+    text-align: justify;
+    justify-content: space-between;
     width: 100%;
-    p {
-      width: 50%;
-      padding-right: 2em;
-      text-align: justify;
-      line-height: 1.3em;
+    .column {
+      display: flex;
+      flex-direction: column;
+      width: 49%;
+      p, ul {
+        text-align: justify;
+        line-height: 1.3em;
+      }
     }
   }
-}
-
-.ingredients {
-  list-style: disc;
 }

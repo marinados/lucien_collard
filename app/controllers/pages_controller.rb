@@ -5,11 +5,11 @@ class PagesController < ApplicationController
   private
 
   def layout_for_page
-    if cookies[:check_age]
-      params[:id] == 'coming_soon' ? 'welcome' : 'application'
-    else
-      'welcome'
-    end
+    #if cookies[:check_age]
+      params[:id] == 'coming_soon' || params[:id] == 'welcome' ? 'welcome' : 'application'
+    # else
+    #   'welcome'
+    # end
   end
 
 end

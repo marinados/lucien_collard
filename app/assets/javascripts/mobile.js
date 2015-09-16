@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  $('html').show();
   $(function() {
     if ($('.arrows-mobile').length == 1) {
       $('#right-arrow').click(function(){
