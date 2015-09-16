@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 function nextBackground() {
   var bg = $('.js-trigger');
-  bg.fadeOut(1000, 'easeOutQuad');
+  bg.fadeOut(2000).queue(function(){
   if (bg.hasClass('bg-history')) {
     bg.removeClass('bg-history').addClass('bg-history1').hide();
   }
@@ -27,8 +27,10 @@ function nextBackground() {
   else if (bg.hasClass('bg-vineyards2')) {
     bg.removeClass('bg-vineyards2').addClass('bg-vineyards').hide();
   }
-  bg.fadeIn(3000, 'easeInQuad');
+  bg.dequeue();
+  bg.fadeIn(2000, 'easeInQuad');
   setTimeout(nextBackground, 7000);
+})
 }
 
 
