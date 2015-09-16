@@ -2,8 +2,6 @@ var downScroll = '<div class="down-scroll pulse" onclick="forceScrollDown()"><sp
 var upScroll = '<div class="up-scroll pulse" onclick="forceScrollUp()"><span><%= image_tag 'arrow_up.png'%></span></div>';
 
   $(document).ready(function() {
-
-
   var textScroll = document.getElementById("text");
   if (textScroll.scrollHeight > $('#text').height()) {
     $('.page').append(downScroll);
@@ -17,7 +15,7 @@ var upScroll = '<div class="up-scroll pulse" onclick="forceScrollUp()"><span><%=
       }
     else {
       $('.down-scroll').remove();
-      $('.page').prepend(upScroll);
+      $('.page').append(upScroll);
     }
 }
 
