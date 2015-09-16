@@ -6,7 +6,7 @@ class PagesController < ApplicationController
 
   def layout_for_page
     if cookies[:check_age]
-      'application'
+      params[:id] == 'coming_soon' ? 'welcome' : 'application'
     else
       'welcome'
     end

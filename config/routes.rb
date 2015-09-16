@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     get '/contact',     to: 'contacts#new', as: 'contact'
     resources "contacts", only: [:create]
 
-    root to: 'pages#show', id: 'home'
+    root to: 'pages#show', id: 'coming_soon'
     get "/pages/*id" => 'pages#show', format: false
   end
 end
