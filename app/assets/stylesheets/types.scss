@@ -9,7 +9,7 @@
   div {
     color: #EEE9A1;
     font-size: 80px;
-    cursor: pointer;
+
   }
 }
 
@@ -23,27 +23,32 @@
   }
 }
 #right-arrow {
+  align-self: center;
+
   height: 20%;
   padding-left: 1em;
-  position: relative;
-  top: 20%;
+  // position: relative;
+  // top: 20%;
+  cursor: pointer;
   img {
     height: 100%;
   }
 }
 
 #types-content {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
   width: 75%;
   h3 .types {
     margin-bottom: 1em;
   }
-  #discover {
-    position: relative;
-    top: 60%;
-  }
+  // #discover {
+  //   position: relative;
+  //   top: 60%;
+  // }
   div {
     display: flex;
     flex-direction: row;
@@ -53,6 +58,8 @@
     .column {
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
       width: 49%;
       p, ul {
         text-align: justify;
