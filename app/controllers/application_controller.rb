@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   before_action :set_locale
   # before_action :check_age
-  # before_action :check_for_mobile
+  before_action :check_for_mobile
 
 
   protect_from_forgery with: :exception

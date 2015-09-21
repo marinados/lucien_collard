@@ -42,8 +42,11 @@
   justify-content: center;
   text-align: center;
   width: 75%;
-  h3 .types {
-    margin-bottom: 1em;
+  h3.types {
+    margin-bottom: 2em;
+  }
+  ul {
+    padding-left: 0.2em;
   }
   // #discover {
   //   position: relative;

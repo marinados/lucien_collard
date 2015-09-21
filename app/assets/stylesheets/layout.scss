@@ -47,6 +47,11 @@
   span {
     flex-grow: 1;
     color: #EEE9A1;
+    img {
+      height: 1.5em;
+      width: auto;
+      margin-right: 0.5em;
+    }
   }
 
 }
@@ -61,7 +66,7 @@
   p {
     margin: 0;
     text-align: center;
-
+    opacity: 0.4;
   }
 }
 

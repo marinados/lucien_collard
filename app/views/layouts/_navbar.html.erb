@@ -9,7 +9,12 @@
   <span> . </span>
   <span> <%= link_to t('contact'), contact_path %> </span>
   <span>
-    <%= link_to icon('facebook-square'), "https://www.facebook.com/Lucien-Collard-Champagne-992445890800326", target: '_blank'%>
-    <%= link_to icon('instagram'), "https://instagram.com/champagneluciencollard/", target: '_blank'%>
+    <%= link_to  "https://www.facebook.com/Lucien-Collard-Champagne-992445890800326", target: '_blank' do%>
+      <%= image_tag 'fb_logo.png'%>
+    <% end %>
+
+    <%= link_to "https://instagram.com/champagneluciencollard/", target: '_blank' do%>
+      <%= image_tag 'insta_logo.png' %>
+    <% end %>
   </span>
 </div>

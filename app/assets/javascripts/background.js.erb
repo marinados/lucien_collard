@@ -5,33 +5,35 @@ $(document).ready(function(){
 })
 
 function nextBackground() {
-  var bg = $('.js-trigger');
-  bg.fadeOut(3000).queue(function(){
-  if (bg.hasClass('bg-history')) {
-    bg.removeClass('bg-history').addClass('bg-history1').hide();
+  if ($('.false-div').length > 0) {
+    var bg = $('.js-trigger');
+    bg.fadeOut(3000).queue(function(){
+    if (bg.hasClass('bg-history')) {
+      bg.removeClass('bg-history').addClass('bg-history1').hide();
+    }
+    else if (bg.hasClass('bg-history1')) {
+      bg.removeClass('bg-history1').addClass('bg-history').hide();
+    }
+    else if (bg.hasClass('bg-philosophy')) {
+      bg.removeClass('bg-philosophy').addClass('bg-philosophy1').hide();
+    }
+    else if (bg.hasClass('bg-philosophy1')) {
+      bg.removeClass('bg-philosophy1').addClass('bg-philosophy').hide();
+    }
+    else if (bg.hasClass('bg-vineyards')) {
+      bg.removeClass('bg-vineyards').addClass('bg-vineyards1').hide();
+    }
+    else if (bg.hasClass('bg-vineyards1')) {
+      bg.removeClass('bg-vineyards1').addClass('bg-vineyards2').hide();
+    }
+    else if (bg.hasClass('bg-vineyards2')) {
+      bg.removeClass('bg-vineyards2').addClass('bg-vineyards').hide();
+    }
+    bg.dequeue();
+    bg.fadeIn(3000, 'easeInQuad');
+    setTimeout(nextBackground, 7000);
+    })
   }
-  else if (bg.hasClass('bg-history1')) {
-    bg.removeClass('bg-history1').addClass('bg-history').hide();
-  }
-  else if (bg.hasClass('bg-philosophy')) {
-    bg.removeClass('bg-philosophy').addClass('bg-philosophy1').hide();
-  }
-  else if (bg.hasClass('bg-philosophy1')) {
-    bg.removeClass('bg-philosophy1').addClass('bg-philosophy').hide();
-  }
-  else if (bg.hasClass('bg-vineyards')) {
-    bg.removeClass('bg-vineyards').addClass('bg-vineyards1').hide();
-  }
-  else if (bg.hasClass('bg-vineyards1')) {
-    bg.removeClass('bg-vineyards1').addClass('bg-vineyards2').hide();
-  }
-  else if (bg.hasClass('bg-vineyards2')) {
-    bg.removeClass('bg-vineyards2').addClass('bg-vineyards').hide();
-  }
-  bg.dequeue();
-  bg.fadeIn(3000, 'easeInQuad');
-  setTimeout(nextBackground, 7000);
-})
 }
 
 
