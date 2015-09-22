@@ -3,23 +3,20 @@ var upScrollMobile = '<div class="up-scroll-mobile" onclick="forceScrollUpMobile
 
 $(document).ready(function() {
   if ($('#content-mobile').length > 0) {
-    console.log('coucou');
     var textScroll = document.getElementById("content-mobile");
     if (textScroll.scrollHeight > $('#content-mobile').height()) {
       $('.page-mobile').append(downScrollMobile);
-      console.log('coucou2');
     }
   }
 })
 
   function forceScrollDownMobile() {
-    console.log('hi');
     var textScroll = document.getElementById("content-mobile");
     if (textScroll.scrollHeight != textScroll.scrollTop + $('#content-mobile').innerHeight()) {
         textScroll.scrollTop += 100;
       }
     else {
-      $('.down-scroll').remove();
+      $('.down-scroll-mobile').remove();
       $('.page-mobile').append(upScrollMobile);
     }
 }
@@ -30,7 +27,7 @@ $(document).ready(function() {
         textScroll.scrollTop -= 100;
       }
     else {
-      $('.up-scroll').remove();
+      $('.up-scroll-mobile').remove();
       $('.page-mobile').append(downScrollMobile);
     }
 }
