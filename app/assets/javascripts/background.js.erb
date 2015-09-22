@@ -7,7 +7,18 @@ $(document).ready(function(){
 
 function preload() {
   if($('.mobile') > 0) {
-  var arrayOfBackgrounds =[
+    var arrayOfBackgrounds =[
+      <%= "\'#{asset_path 'backgrounds/mobile/frame_mobile.png'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/bottle_neck_mobile.png'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/log_mobile.png'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/7.jpg'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/8blue_mobile.jpg'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/8black_mobile.jpg'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/home.jpg'}\'" %> ];
+
+  }
+  else {
+    var arrayOfBackgrounds =[
     <%= "\'#{asset_path 'backgrounds/old_bottle.png'}\'" %>,
     <%= "\'#{asset_path 'backgrounds/frame.png'}\'" %>,
     <%= "\'#{asset_path 'backgrounds/bottle_neck.png'}\'" %>,
@@ -20,17 +31,6 @@ function preload() {
     <%= "\'#{asset_path 'backgrounds/8blue.jpg'}\'" %>,
     <%= "\'#{asset_path 'backgrounds/8black.jpg'}\'" %>,
     <%= "\'#{asset_path 'backgrounds/home.jpg'}\'" %> ];
-  }
-  else {
-    var arrayOfBackgrounds =[
-
-      <%= "\'#{asset_path 'backgrounds/mobile/frame_mobile.png'}\'" %>,
-      <%= "\'#{asset_path 'backgrounds/mobile/bottle_neck_mobile.png'}\'" %>,
-      <%= "\'#{asset_path 'backgrounds/mobile/log_mobile.png'}\'" %>,
-      <%= "\'#{asset_path 'backgrounds/7.jpg'}\'" %>,
-      <%= "\'#{asset_path 'backgrounds/mobile/8blue_mobile.jpg'}\'" %>,
-      <%= "\'#{asset_path 'backgrounds/mobile/8black_mobile.jpg'}\'" %>,
-      <%= "\'#{asset_path 'backgrounds/mobile/home.jpg'}\'" %> ];
   }
 
     $(arrayOfBackgrounds).each(function () {
