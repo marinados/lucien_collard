@@ -1,6 +1,6 @@
 .false-div-mobile {
-  height: 100%;
-  width:  100%;
+  height: 100vh;
+  width:  100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -9,16 +9,29 @@
   background-position: right center;
 }
 
+.cover {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  background-color: black;
+  opacity: 0.7;
+
+}
 .bg-history-mobile {
-  background-image: image-url('backgrounds/mobile/old_bottle_mobile.png');
+  background-image: image-url('backgrounds/mobile/frame_mobile.png');
 }
 
 .bg-philosophy-mobile {
   background-image: image-url('backgrounds/mobile/bottle_neck_mobile.png');
+
 }
 
 .bg-vineyards-mobile {
-  background-image: image-url('backgrounds/mobile/bottle_closeup_mobile.png');
+  background-image: image-url('backgrounds/mobile/log_mobile.png');
+
 }
 
 
@@ -30,8 +43,8 @@
   padding: 3% 5% 1% 5%;
 }
 
-.bg {
-  background-image: image-url('backgrounds/7.jpg');
+.bg-mobile {
+  background-color: black;
   background-size: cover;
 }
 

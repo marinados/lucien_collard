@@ -1,8 +1,43 @@
 $(document).ready(function(){
+  preload();
   $('body').fadeIn(3000, 'easeInQuad', function() {
     setTimeout(nextBackground, 7000)
   });
 })
+
+function preload() {
+  if($('.mobile') > 0) {
+  var arrayOfBackgrounds =[
+    <%= "\'#{asset_path 'backgrounds/old_bottle.png'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/frame.png'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/bottle_neck.png'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/coin.png'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/log.png'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/letter.png'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/bottle_closeup.png'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/7.jpg'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/capsule.jpg'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/8blue.jpg'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/8black.jpg'}\'" %>,
+    <%= "\'#{asset_path 'backgrounds/home.jpg'}\'" %> ];
+  }
+  else {
+    var arrayOfBackgrounds =[
+
+      <%= "\'#{asset_path 'backgrounds/mobile/frame_mobile.png'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/bottle_neck_mobile.png'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/log_mobile.png'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/7.jpg'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/8blue_mobile.jpg'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/8black_mobile.jpg'}\'" %>,
+      <%= "\'#{asset_path 'backgrounds/mobile/home.jpg'}\'" %> ];
+  }
+
+    $(arrayOfBackgrounds).each(function () {
+      $('<img />').attr('src',this).appendTo('body').css('display','none');
+    });
+
+}
 
 function nextBackground() {
   if ($('.false-div').length > 0) {

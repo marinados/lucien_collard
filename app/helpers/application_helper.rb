@@ -10,7 +10,7 @@ module ApplicationHelper
     when 'vineyards'
       "js-trigger bg-vineyards#{x} false-div" + x
     when 'types'
-      "bg8cap#{x} false-div" + x
+      mobile_device? ? "bg8blue#{x} false-div" + x : "bg8cap false-div"
     when 'contacts'
       'bg'
     when 'home'
