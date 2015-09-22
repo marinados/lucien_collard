@@ -7,24 +7,24 @@
   </div>
 </div>
 <script>
-  var text = $('#types-content');
+  var text = $('.arrows-mobile');
+
   var textBlack = '<%=j render 'black_text'%>';
   var textBlue = '<%=j render 'blue_text'%>';
 $('#right-mobile-arrow').click(function(){
-      var bg = $('div:first');
+  var bg = $('div:first');
+  $('#wrapper-mobile').fadeOut(800).queue(function(){
+    if (bg.hasClass('bg8blue-mobile')) {
+      bg.removeClass('bg8blue-mobile').addClass('bg8black-mobile');
+      text.html(textBlack);
 
-      $('body').fadeOut(800);
-        if (bg.hasClass('bg8blue-mobile')) {
-          bg.removeClass('bg8blue-mobile').addClass('bg8black-mobile');
-          text.html(textBlack);
-          $('body').fadeIn(1200);
-
-         } else if (bg.hasClass('bg8black-mobile')) {
-          bg.removeClass('bg8black-mobile').addClass('bg8blue-mobile');
-          text.html(textBlack);
-          $('body').fadeIn(1200);
-         }
-      $('body').fadeIn(1200);
-       });
+     } else if (bg.hasClass('bg8black-mobile')) {
+      bg.removeClass('bg8black-mobile').addClass('bg8blue-mobile');
+      text.html(textBlue);
+     }
+  $('#wrapper-mobile').dequeue();
+  $('#wrapper-mobile').fadeIn(1200);
+  });
+});
 
 </script>
