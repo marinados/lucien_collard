@@ -19,4 +19,13 @@ module ApplicationHelper
       'false-div' + x
     end
   end
+
+  def changing_shade
+    case params[:id]
+    when 'history', 'philosophy', 'vineyards'
+      'cover'
+    else
+      ''
+    end
+  end
 end

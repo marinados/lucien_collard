@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get 'vineyards', to: 'pages#show', id: 'vineyards', as: 'vineyards'
     get 'film', to: 'pages#show', id: 'film', as: 'film'
     get '/contact',     to: 'contacts#new', as: 'contact'
+    get 'home', to: 'pages#show', id: 'home', as: 'home'
     resources "contacts", only: [:create]
 
     root to: 'pages#show', id: 'coming_soon'
