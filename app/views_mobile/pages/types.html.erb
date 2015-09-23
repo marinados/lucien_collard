@@ -1,5 +1,5 @@
 <div class="types-mobile-container">
-  <div class="arrows-mobile">
+  <div class="arrows-mobile" id="scroll-listener">
     <%= render 'blue_text'%>
   </div>
   <div class="right-mobile-arrow">
@@ -8,6 +8,7 @@
 </div>
 <script>
   var text = $('.arrows-mobile');
+  var scrollDiv = document.getElementById("scroll-listener");
 
   var textBlack = '<%=j render 'black_text'%>';
   var textBlue = '<%=j render 'blue_text'%>';
@@ -17,14 +18,16 @@ $('#right-mobile-arrow').click(function(){
     if (bg.hasClass('bg8blue-mobile')) {
       bg.removeClass('bg8blue-mobile').addClass('bg8black-mobile');
       text.html(textBlack);
-
      } else if (bg.hasClass('bg8black-mobile')) {
       bg.removeClass('bg8black-mobile').addClass('bg8blue-mobile');
       text.html(textBlue);
+        scrollDiv.scrollTop = 0;
      }
+
   $('#wrapper-mobile').dequeue();
   $(bg).fadeIn(1200);
   $('#wrapper-mobile').fadeIn(1200);
+  scrollDiv.scrollTop = 0;
   });
 });
 
