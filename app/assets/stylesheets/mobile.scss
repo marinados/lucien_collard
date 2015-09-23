@@ -75,13 +75,12 @@ ul.nav-mobile {
   width: 100%;
   min-width: 100vw;
   text-align: center;
-  padding: 3em 0;
+  padding: 1em 0;
   li span {
   font-size: 20px;
-  line-height: 1.5em;
+  line-height: 1em;
   }
   li {
-
     p {
       font-size: 40px;
       line-height: 1em;
@@ -141,17 +140,20 @@ ul.nav-mobile {
     height: 100%;
   }
   p {
-    font-size: 19px;
+    font-size: 17px;
     text-align: justify;
   }
   h2 {
-    text-decoration: underline;
+    // text-decoration: underline;
     text-align: center;
     margin-bottom: 2em;
-    font-size: 23px;
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 19px;
   }
   h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

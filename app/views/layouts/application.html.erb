@@ -10,9 +10,11 @@
 </head>
 <body class="bg">
   <div class="<%=changing_bg%>" id="bg" ></div>
+
   <div class="settings">
     <%= render 'layouts/header' %>
     <div id="wrapper">
+      <%= render 'shared/flashes' if flash.present? %>
       <%= yield %>
     </div>
       <%= render 'layouts/navbar' %>

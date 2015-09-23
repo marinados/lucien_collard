@@ -1,0 +1,16 @@
+.flashes {
+  div {
+    z-index: 200;
+    height: 2em;
+    background-color: transparent;
+    color: #EEE9A1;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    width: auto;
+    button {
+      vertical-align: top;
+    }
+  }
+}
