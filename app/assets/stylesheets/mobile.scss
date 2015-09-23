@@ -74,15 +74,20 @@ ul.nav-mobile {
   height: 85vh;
   width: 100%;
   min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  padding: 3em 0;
   li span {
   font-size: 20px;
   line-height: 1.5em;
   }
   li {
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
     p {
       font-size: 40px;
+      line-height: 0.5em;
     }
   }
 }
