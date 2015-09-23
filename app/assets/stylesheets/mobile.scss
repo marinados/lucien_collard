@@ -102,11 +102,16 @@ ul.nav-mobile {
 #contact-mobile {
   height: 100%;
   input, textarea {
+    font-size: 15px;
+    padding: 0.1em;
+  }
+  .new_contact {
     width: 100%;
-    font-size: 19px;
-    padding: 0.2em;
+
+
   }
 }
+
 
 .margin-mobile {
   margin-bottom: 30px;
@@ -199,12 +204,6 @@ ul.nav-mobile {
   height: auto;
 }
 
-#contact-mobile {
-  .new_contact {
-    width: 100%;
-    margin: auto;
-  }
-}
 
 .down-scroll-mobile, .up-scroll-mobile {
     height: 5vh;

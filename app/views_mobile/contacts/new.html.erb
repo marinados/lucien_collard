@@ -5,9 +5,6 @@
     <%= f.text_field :subject, placeholder: "#{t('subject')}", required: true, class: 'grey margin-mobile size' %>
     <%= f.text_field :email, placeholder: "#{t('your_email')}", required: true, class: 'grey margin-mobile size' %>
     <%= f.text_area :message, placeholder: "#{t('your_message')}",as: :text, required: true, cols: 70, rows: 3, class: 'grey margin-mobile' %>
-    <div class= "hidden">
-      <%= f.text_field :nickname, hint: 'Leave this field blank!' %>
-    </div>
     <div>
       </br>
       <%= f.submit %>
