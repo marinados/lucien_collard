@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  before_action :set_locale
-  # before_action :check_age
   before_action :check_for_mobile
+  before_action :set_locale
+  before_action :check_age
 
 
   protect_from_forgery with: :exception
@@ -34,7 +34,6 @@ class ApplicationController < ActionController::Base
     if session[:mobile_override]
       session[:mobile_override] == "1"
     else
-      # Season this regexp to taste. I prefer to treat iPad as non-mobile.
       (request.user_agent =~ /Mobile|webOS/)
     end
   end
