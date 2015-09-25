@@ -170,16 +170,21 @@ ul.nav-mobile {
   margin: auto;
   height: 70vh;
   width: 80%;
+  .logo {
+    height: 20%;
+  }
 }
 
 #welcome-mobile-text {
+  height: 80%;
+
   margin-top: 3em;
   text-align: center;
   p {
-    font-size: 35px;
+    font-size: 30px;
   }
   h3, a {
-  font-size: 40px;
+  font-size: 32px;
 
   }
 }
