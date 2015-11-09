@@ -5,7 +5,7 @@
         <%= video_tag('presentation_very_large.mp4', type: 'video/mp4', autobuffer: true, autoplay: true, controls: true, id: 'video') %>
         <div>
           <%= button_to root_path, class: 'close', method: :get do %>
-            <span aria-hidden="true">Passer l'introduction</span>
+            <span aria-hidden="true"><%= t('pass')%></span>
           <% end %>
         </div>
       </div>

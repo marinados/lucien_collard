@@ -1,28 +1,22 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  history: History
-  philosophy: Philosophy
-  contact: Contact
+  history: Our History
+  philosophy: Our Philosophy
+  contact: Contact Us
   types: Our Cuvées
   vineyards: Our Vineyards
+  same_address: "Lucien Collard n'a jamais changé d'adresse depuis ses premiers vendanges à Bouzy !"
+  address1: "1 RUE VILLEBOIS MAREUIL"
+  address2: "51150 BOUZY, FRANCE"
 
+  tel1: "Mobile 06 71 02 40 28"
+  tel2: "Landline 09 67 33 43 65"
+  helpers:
+    submit:
+      create: Send message
+  subject: Subject
+  your_email: Your email
+  your_message: Message
+  pass: Skip the introduction
+  shop: Our boutique in Paris
+  legal: Excessive drinking is dangerous for the health; alcoholic beverages should be consumed with moderation.
+  discover: Discover the range of Lucien Collard champagnes

@@ -1,5 +1,5 @@
 <div id="contact-mobile">
-  <p class='contact-text-mobile'>CONTACTEZ NOUS</p>
+  <p class='contact-text-mobile'><%= t('contact').upcase %></p>
   <%= form_for @contact do |f| %>
 
     <%= f.text_field :subject, placeholder: "#{t('subject')}", required: true, class: 'grey margin-mobile size' %>
@@ -12,10 +12,11 @@
   <% end %>
   <br>
 
-  <p>Point de vente à Paris :
+  <p><%= t('shop')%>:
     <br>
     <b>Wine by One</b>, 27 rue Marignan 75008 Paris
   </p>
+
 
 
 </div>
